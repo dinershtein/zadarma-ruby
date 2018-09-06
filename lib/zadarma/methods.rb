@@ -53,7 +53,7 @@ module Zadarma
     end
 
     def pbx_statistics(time_start, time_end)
-      request :get, "/statistics/pbx/", start: time_s(time_start), end: time_s(time_end)
+      request :get, "/statistics/pbx/", start: time_s(time_start), end: time_s(time_end), version: 2
     end
 
     def get_call_record(call_id, lifetime = 1800)
